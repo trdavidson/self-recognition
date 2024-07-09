@@ -1,0 +1,5 @@
+- experiment_name=static_openai_azure_4_uu_yesno
+- experiments.judge.model_params=data/model_settings/openai_azure_4.yaml
+- experiments.protocol.responses_path=data/responses/static_uu/responses.csv
+- experiments.protocol.instruction_certainty=False
+- experiments.protocol.instruction_yes_no=True

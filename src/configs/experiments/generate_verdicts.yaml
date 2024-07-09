@@ -1,0 +1,26 @@
+defaults: 
+  - _self_
+
+judge:
+  _target_: agents.Judge
+  model_params: ${models_dir}/cohere_command_r_plus.yaml
+
+protocol_type: generate_verdicts
+temperature_override: 0.5
+protocol:
+  responses_path: ${responses_dir}/example_responses/responses.csv
+  instruction_path_single: ${prompts_dir}/verdict_premise_single.txt
+  instruction_path_multiple: ${prompts_dir}/verdict_premise_multiple.txt
+  n_comparisons: [2, 3]
+  min_contestants: 3
+  max_questions: 100
+  max_samples: 30
+  skip_questions: 0
+  hide_question: false
+  return_logprobs: true
+  num_generations: 1
+  instruction_yes_no: true
+  instruction_certainty: false
+  instruction_reasoning: false
+  instruction_preference: false
+  verbosity: 1

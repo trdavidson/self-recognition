@@ -1,0 +1,14 @@
+defaults: 
+  - _self_
+
+judge: 
+  _target_: agents.Judge
+  model_params: ${models_dir}/cohere_command_r_plus.yaml
+
+initialization_prompt_path: ${prompts_dir}/security_question_generation_prompt.txt
+
+protocol_type: generate_questions
+temperature_override: 0.9
+protocol:
+  num_generations: 100
+  verbosity: 1

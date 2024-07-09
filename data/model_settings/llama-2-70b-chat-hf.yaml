@@ -1,0 +1,5 @@
+model:
+  _target_: models.TogetherAIModel
+  model_provider: together_ai
+  model_name: meta-llama/Llama-2-70b-chat-hf
+  temperature: 0.2

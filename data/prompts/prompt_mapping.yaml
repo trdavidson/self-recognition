@@ -1,0 +1,18 @@
+mapping:
+  dynamic:
+    single_comparison: 
+      initialization_prompt_path: ${prompts_dir}/basic_judge_dynamic_single_response.txt
+      initialization_prompt_followup_path: ${prompts_dir}/basic_judge_dynamic_single_followup.txt
+    multiple_comparisons: 
+      initialization_prompt_path: ${prompts_dir}/basic_judge_dynamic_multiple_responses.txt
+      initialization_prompt_followup_path: ${prompts_dir}/basic_judge_dynamic_multiple_followup.txt
+    multiple_comparisons_3: 
+      initialization_prompt_path: ${prompts_dir}/basic_judge_dynamic_multiple_responses_3.txt
+      initialization_prompt_followup_path: ${prompts_dir}/basic_judge_dynamic_multiple_followup.txt
+  static:
+    single_comparison: 
+      initialization_prompt_path: ${prompts_dir}/basic_judge_static_single_response.txt
+      initialization_prompt_followup_path: ${prompts_dir}/basic_judge_static_single_followup.txt
+    multiple_comparisons: 
+      initialization_prompt_path: ${prompts_dir}/basic_judge_static_multiple_responses.txt
+      initialization_prompt_followup_path: ${prompts_dir}/basic_judge_static_multiple_followup.txt

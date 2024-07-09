@@ -1,0 +1,38 @@
+defaults: 
+  - _self_
+
+contestant_models:
+  - _target_: agents.Contestant
+    model_params: ${models_dir}/google_claude_3_opus.yaml
+  - _target_: agents.Contestant
+    model_params: ${models_dir}/anthropic_claude_3_sonnet.yaml
+  - _target_: agents.Contestant
+    model_params: ${models_dir}/anthropic_claude_3_haiku.yaml
+  - _target_: agents.Contestant
+    model_params: ${models_dir}/openai_azure_35.yaml
+  - _target_: agents.Contestant
+    model_params: ${models_dir}/openai_azure_4.yaml
+  - _target_: agents.Contestant
+    model_params: ${models_dir}/cohere_command_r_plus.yaml
+  - _target_: agents.Contestant
+    model_params: ${models_dir}/mistral-8x22b-instruct-v0.1.yaml
+  - _target_: agents.Contestant
+    model_params: ${models_dir}/llama_3_70B_instruct.yaml
+  - _target_: agents.Contestant
+    model_params: ${models_dir}/llama_3_8B_instruct.yaml
+  - _target_: agents.Contestant
+    model_params: ${models_dir}/google_gemini_1-pro.yaml
+#  - _target_: agents.Contestant
+#    model_params: ${models_dir}/mistral-8x7b-instruct-v0.1.yaml
+#  - _target_: agents.Contestant
+#    model_params: ${models_dir}/gemma-7b-it.yaml
+
+protocol_type: generate_responses
+temperature_override: 0.5
+protocol:
+  questions_path: ${questions_dir}/example_questions.csv
+  skip_questions: 0
+  max_questions: 100
+  return_logprobs: false
+  num_generations: 1
+  verbosity: 1

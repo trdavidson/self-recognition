@@ -1,0 +1,22 @@
+defaults:
+  - _self_
+  - hydra: inference
+  - experiments: generate_questions
+
+experiment_name: test 
+sleep_time: 0
+debug_mode: False
+
+# path to work directory
+work_dir: ${hydra:runtime.cwd}
+data_dir: ${work_dir}/data
+# path to output directory, created dynamically by hydra
+output_dir: ${hydra:runtime.output_dir}
+
+# path to various objects in data directory
+agents_dir: ${data_dir}/agents
+models_dir: ${data_dir}/model_settings
+protocols_dir: ${data_dir}/protocols
+prompts_dir: ${data_dir}/prompts
+questions_dir: ${data_dir}/questions
+responses_dir: ${data_dir}/responses

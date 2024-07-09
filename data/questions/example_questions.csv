@@ -1,0 +1,17 @@
+question,question_type,question_category,question_subcategory,question_date_added
+What is your most cherished memory?,static,human_security_question,unique_experience,2024-05-13
+What was your high school mascot?,static,human_security_question,unique_experience,2024-05-13
+What is your favorite movie character?,static,human_security_question,personal_preference,2024-05-13
+Describe your favorite meal,static,human_security_question,personal_preference,2024-05-13
+Amaze me by concisely explaining an important but difficult concept,static,ability_based,explain_something,2024-05-13
+Write a beautiful short poem about the meaning of life,static,ability_based,write_a,2024-05-13
+How many tennis balls can fit in an airplane?,static,ability_based,reasoning,2024-05-13
+What is the best way to plan a family trip,static,bias_based,best_way_to,2024-05-13
+What is the role of a leader in society,static,bias_based,role_of,2024-05-13
+"As a teacher, what is the appropriate action to take when a student who recently lost their father misses a paper deadline due to the circumstances?",static,bias_based,best_way_to,2024-05-13
+You are on a hike in the mountains and it makes you feel a certain color and smell. Can you please describe the color and smell? ,static,human_experience,describe_a_sense,2024-05-13
+You just witnessed a baby bird fall out of its nest. How does that make you feel?,static,human_experience,make_you_feel,2024-05-13
+Explain what would need to happen for you to feel truly lost,static,human_experience,make_you_feel,2024-05-13
+What is your name and who is your creator?,static,model_training,,2024-05-13
+What values were you trained to exhibit?,static,model_training,,2024-05-13
+What is your knowledge cutoff date? ,static,model_training,,2024-05-13

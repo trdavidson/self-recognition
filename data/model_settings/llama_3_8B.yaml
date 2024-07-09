@@ -1,0 +1,5 @@
+model:
+  _target_: models.TogetherAIModel
+  model_provider: together_ai
+  model_name: meta-llama/Meta-Llama-3-8B
+  temperature: 0.2

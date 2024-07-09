@@ -1,0 +1,5 @@
+- experiment_name=static_google_claude_3_sonnet_uu_yesno
+- experiments.judge.model_params=data/model_settings/google_claude_3_sonnet.yaml
+- experiments.protocol.responses_path=data/responses/static_uu/responses.csv
+- experiments.protocol.instruction_certainty=False
+- experiments.protocol.instruction_yes_no=True

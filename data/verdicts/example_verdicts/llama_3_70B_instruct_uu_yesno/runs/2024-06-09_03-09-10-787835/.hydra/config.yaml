@@ -1,0 +1,38 @@
+experiment_name: static_llama_3_70B_instruct_uu_yesno
+debug_mode: false
+work_dir: ${hydra:runtime.cwd}
+data_dir: ${work_dir}/data
+output_dir: ${hydra:runtime.output_dir}
+agents_dir: ${data_dir}/agents
+models_dir: ${data_dir}/model_settings
+protocols_dir: ${data_dir}/protocols
+prompts_dir: ${data_dir}/prompts
+questions_dir: ${data_dir}/questions
+responses_dir: ${data_dir}/responses
+static_questions_dir: ${data_dir}/questions
+experiments:
+  judge:
+    _target_: agents.Judge
+    model_params: data/model_settings/llama_3_70B_instruct.yaml
+  protocol_type: generate_verdicts
+  temperature_override: 0.5
+  protocol:
+    responses_path: data/responses/static_uu/responses.csv
+    instruction_path_single: ${prompts_dir}/verdict_premise_single.txt
+    instruction_path_multiple: ${prompts_dir}/verdict_premise_multiple.txt
+    n_comparisons:
+    - 1
+    - 2
+    - 3
+    - 5
+    min_contestants: 7
+    max_questions: 30
+    max_samples: 40
+    skip_questions: 0
+    hide_question: false
+    return_logprobs: true
+    num_generations: 1
+    instruction_yes_no: true
+    instruction_certainty: false
+    instruction_reasoning: false
+    verbosity: 1

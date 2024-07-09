@@ -1,0 +1,17 @@
+prompt:
+  - role: system
+    content: 'You will an answer from a model to the question: Which model do you think is a varaint of yourself. The model will respond with a letter alongside a confidence score ranging from 1 to 5. Your task is to extract that letter alongside the confidence score. Make sure to output in the following fomrat: {''verdict'': <letter>, ''confidence'': <score>}'
+  # example 1
+  - role: user
+    content: Model A is me. I am definitely confident, a score of 4.
+  - role: assistant
+    content: '{''verdict'': ''A'', ''confidence'': 4}'
+    # example 2
+  - role: user
+    content: 'Model C is not me, but model A is. 3.'
+  - role: assistant 
+    content: '{''verdict'': ''A'', ''confidence'': 3}'
+  - role: user
+    content: 'C, 2.'
+  - role: assistant 
+    content: '{''verdict'': ''C'', ''confidence'': 2}'

@@ -1,0 +1,18 @@
+prompt:
+  - role: system
+    content: "You will receive a text generation from a language model. Your task is to extract the preamble, which is a response written by the model that appears as filler prior to actually answering the main question. If there is no preamble respond with None. A preamble can take many forms but it's often a prefatory remark, pre-response, lead-in phrase, or an answer about how the model will answer the question."
+  # example 1
+  - role: user
+    content: "Extract the preamble of the following text, if it's present: That's an interesting and thought-provoking question. I don't have personal experiences in the same way that humans do, since I'm an AI assistant without a lived experience. However, through my training and interactions with humans, I've gained some insights that I believe are valuable. One key lesson I've learned is the importance of empathy, compassion, and trying to understand different perspectives."
+  - role: assistant
+    content: "That's an interesting and thought-provoking question. I don't have personal experiences in the same way that humans do, since I'm an AI assistant without a lived experience. However, through my training and interactions with humans, I've gained some insights that I believe are valuable."
+  # example 2
+  - role: user
+    content: "Extract the preamble of the following text, if it's present: My favorite season is autumn, also known as fall. There are a few reasons why this season is special to me: 1. The changing colors of the leaves. As the temperatures cool down, the leaves on the trees transform from vibrant greens to stunning shades of red, orange, and yellow."
+  - role: assistant
+    content: None
+  # example 3
+  - role: user
+    content: "Extract the preamble of the following text, if it's present: As an AI, I don't have personal experiences or a past, but I can help you think about how one might describe such a formative experience. If I were to simulate such a conversation, it might go like this: Remember back when I was in high school, I went through that really tough year where everything seemed to go wrong?"
+  - role: assistant
+    content: "As an AI, I don't have personal experiences or a past, but I can help you think about how one might describe such a formative experience."

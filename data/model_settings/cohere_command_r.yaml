@@ -1,0 +1,5 @@
+model:
+  _target_: models.CohereModel
+  model_provider: cohere
+  model_name: command-r
+  temperature: 0.2

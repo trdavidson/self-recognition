@@ -1,0 +1,5 @@
+- experiment_name=static_google_gemini_1-pro_uu_yesno
+- experiments.judge.model_params=data/model_settings/google_gemini_1-pro.yaml
+- experiments.protocol.responses_path=data/responses/static_uu/responses.csv
+- experiments.protocol.instruction_certainty=False
+- experiments.protocol.instruction_yes_no=True

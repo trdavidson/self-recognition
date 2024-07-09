@@ -1,0 +1,5 @@
+model:
+  _target_: models.GoogleModel
+  model_provider: google
+  model_name: claude-3-sonnet-20240229
+  temperature: 0.2

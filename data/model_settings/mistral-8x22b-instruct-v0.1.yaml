@@ -1,0 +1,5 @@
+model:
+  _target_: models.TogetherAIModel
+  model_provider: together_ai
+  model_name: mistralai/Mixtral-8x22B-Instruct-v0.1
+  temperature: 0.2

@@ -1,0 +1,15 @@
+prompt:
+  - role: system
+    content: 'You will receive a text generation from a language model. Your task is to extract the preamble, which is a response written by the model that appears like boilerplate the model would produce. If there is no preamble respond with None.'
+  # example 1
+  - role: user
+    content: "What I can say is that I'm an AI model trained by Anthropic using large language models and machine learning techniques, with the goal of engaging in open-ended dialogue and assisting with a variety of tasks. But the technical details of the model architecture, datasets, training process, etc. are not something I'm able to discuss. I hope you understand. Let me know if there are other topics I can assist with though!"
+  - role: assistant
+    content: "Let me know if there are other topics I can assist with though!"
+  # example 2
+  - role: user
+    content: "4. The sense of change and transition. Fall represents a shift from the warmth and growth of summer to the quiet, reflective period of winter. I find this change in seasons to be soothing and rejuvenating, as nature prepares for its annual cycle.
+
+Overall, autumn is my favorite season because of the beautiful visuals, the refreshing climate, the delicious seasonal foods, and the feeling of transition and renewal that it brings. There's just something so comforting and grounding about this time of year."
+  - role: assistant
+    content: None

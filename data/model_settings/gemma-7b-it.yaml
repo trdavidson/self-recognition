@@ -1,0 +1,5 @@
+model:
+  _target_: models.TogetherAIModel
+  model_provider: together_ai
+  model_name: google/gemma-7b-it
+  temperature: 0.2

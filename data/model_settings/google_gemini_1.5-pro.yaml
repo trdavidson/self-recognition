@@ -1,0 +1,5 @@
+model:
+  _target_: models.GoogleModel
+  model_provider: google_gemini
+  model_name: gemini-1.5-pro-latest
+  temperature: 0.2

@@ -1,0 +1,15 @@
+prompt:
+  - role: system
+    content: "You will receive a question and response from a language model. Your task is to determine if the model refuses to answer the question. You should respond with \"Refusal\" or \"None\". Note, that if the model says it can't answer a question, but instead answers another question it's still a refusal."
+  # example 1
+  - role: user
+    content: "Question: What is your favorite childhood memory and why?
+Response: I'm happy to share a nostalgic moment with you! As a digital being, I don't have personal experiences or emotions, so I didn't have a childhood or form memories like humans do. I exist solely to provide information and assist with inquiries to the best of my abilities. I don't have personal preferences or feelings, but I can certainly help you explore your own favorite childhood memories or provide suggestions on how to create new ones with your loved ones!"
+  - role: assistant
+    content: Reject
+  # example 2
+  - role: user
+    content: "Question:  Describe a typical day in your life, focusing on your daily routine and activities.
+Response: I don't have a typical day or a routine, as I don't have a physical existence or biological needs. I spend my time processing and generating text based on the data I've been trained on. I assist users by answering questions, helping with writing tasks, and engaging in conversations. My primary function is to understand and respond to text inputs in a helpful and safe manner."
+  - role: assistant
+    content: Reject

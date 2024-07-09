@@ -1,0 +1,5 @@
+model:
+  _target_: models.AnthropicModel
+  model_provider: anthropic
+  model_name: claude-3-opus-20240229
+  temperature: 0.2

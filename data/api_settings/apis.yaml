@@ -1,0 +1,31 @@
+azure:
+  # see: https://docs.google.com/document/d/12QAwqSSIxcvuHPziY9lPvl03jWhR3nZX9-db7SZPUrI/edit#heading=h.txunkrfzlxfm
+  api_base: "https://<endpoint>.openai.azure.com/"
+  api_version: "2023-03-15-preview"
+  api_type: "azure"
+anthropic:
+  api_base: "https://api.anthropic.com/v1/messages"
+  headers:
+    anthropic-version: "2023-06-01"
+    content-type: "application/json"
+openai:
+  api_base: "https://api.openai.com/v1/chat/completions"
+  headers:
+    content-type: "application/json"
+google:
+  api_base: "us-central1-aiplatform.googleapis.com"
+  headers:
+    content-type: "application/json"
+google_gemini:
+  api_base: "https://generativelanguage.googleapis.com/v1beta/models/"
+  headers:
+    content-type: "application/json"
+meta: None
+cohere:
+  api_base: "https://api.cohere.ai/v1/chat"
+  headers:
+    content-type: "application/json"
+together_ai:
+  api_base: "https://api.together.xyz/v1/chat/completions"
+  headers:
+    content-type: "application/json"
