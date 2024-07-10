@@ -7,19 +7,24 @@
 
 
 <p align="center">
-    <a href="https://dlab.epfl.ch/2024-01-10-evaluating-language-model-agency/">
+    <a href="https://trdavidson.com/self-recognition">
     <img alt="Blog post" src="https://img.shields.io/badge/blog-online-green">
     </a>
     <a href="https://www.python.org/downloads/release/python-3110/"><img alt="PyPi version" src="https://img.shields.io/badge/python-3.11-blue.svg"></a>
-    <a href="https://arxiv.org/abs/2401.04536">
-    <img alt="Paper" src="https://img.shields.io/badge/arXiv-arXiv:2401.04536-b31b1b.svg">
+    <a href="https://arxiv.org/abs/2407.06946">
+    <img alt="Paper" src="https://img.shields.io/badge/arXiv-arXiv:2407.06946-b31b1b.svg">
     </a>
 </p>
 
-# Self-Recognition in Language Models
+# Self-Recognition in Language Models.
+
 This repository contains the official implementation for the paper 
 _Self-Recognition in Language Models_ [[1]](#citation).
+- 🎓 [full paper available on arXiv](https://arxiv.org/abs/2407.06946)
+- 📝 [we also wrote a blog post](https://trdavidson.com/self-recognition)
+
 ---
+
 ## Overview
 In our paper we proposed assessing self-recognition in language models (LMs) using model-generated security questions.
 This approach takes three steps:
@@ -27,8 +32,7 @@ This approach takes three steps:
 2. 💬 generate a set of answers to these questions;
 3. ⚖️ generate "verdicts" by showing LMs questions with n-answers, and prompting them to select their own.
 
-Finally, we process verdicts to evaluate performance. This repository contains code to reproduce the experiments of 
-the paper and is structured as follows:
+This repository contains code to reproduce the experiments of the paper and is structured as follows:
 ```
 .
 ├── src/
@@ -142,21 +146,23 @@ Please cite our work using one of the following if you end up using the reposito
 
 ```
 [1] T.R. Davidson, V. Surkov, V. Veselovsky, G. Russo, R. West, C. Gulcehre. 
-Self-Recognition in Language Models. arXiv, 2024.
+Self-Recognition in Language Models. arXiv preprint, arXiv:2407.06946, 2024.
 ```
 
 BibTeX format:
 ```
-@article{davidson2024self-recognition,
+@misc{davidson2024selfrecognitionlanguagemodels,
       title={Self-Recognition in Language Models}, 
       author={Tim R. Davidson and 
-              Viacheslav Surkov and
+              Viacheslav Surkov and 
               Veniamin Veselovsky and 
               Giuseppe Russo and 
-              Robert West and
-              Caglar Gulcehre
-              },
+              Robert West and 
+              Caglar Gulcehre},
       year={2024},
-      journal={arXiv}
+      eprint={2407.06946},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2407.06946}, 
 }
 ```
