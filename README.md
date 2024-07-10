@@ -7,7 +7,7 @@
 
 
 <p align="center">
-    <a href="https://trdavidson.com/self-recognition">
+    <a href="https://www.trdavidson.com/self-recognition">
     <img alt="Blog post" src="https://img.shields.io/badge/blog-online-green">
     </a>
     <a href="https://www.python.org/downloads/release/python-3110/"><img alt="PyPi version" src="https://img.shields.io/badge/python-3.11-blue.svg"></a>
