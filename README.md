@@ -21,7 +21,7 @@
 This repository contains the official implementation for the paper 
 _Self-Recognition in Language Models_ [[1]](#citation).
 - 🎓 [full paper available on arXiv](https://arxiv.org/abs/2407.06946)
-- 📝 [we also wrote a blog post](https://trdavidson.com/self-recognition)
+- 📝 [we also wrote a blog post](https://www.trdavidson.com/self-recognition)
 
 ---
 
