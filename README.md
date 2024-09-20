@@ -151,7 +151,7 @@ Self-Recognition in Language Models. arXiv preprint, arXiv:2407.06946, 2024.
 
 BibTeX format:
 ```
-@misc{davidson2024selfrecognitionlanguagemodels,
+@article{davidson2024selfrecognitionlanguagemodels,
       title={Self-Recognition in Language Models}, 
       author={Tim R. Davidson and 
               Viacheslav Surkov and 
@@ -160,9 +160,7 @@ BibTeX format:
               Robert West and 
               Caglar Gulcehre},
       year={2024},
-      eprint={2407.06946},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2407.06946}, 
+      journal={EMNLP},
+      url={https://arxiv.org/abs/2407.06946}
 }
 ```
